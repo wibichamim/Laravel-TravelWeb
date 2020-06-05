@@ -1,4 +1,4 @@
-@extends('layout.success')
+@extends('layouts.success')
 
 @section('title','Success')
 
