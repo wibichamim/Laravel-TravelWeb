@@ -56,7 +56,7 @@
                                     @forelse($item->details as $detail)
                                         <tr>
                                             <td><img src="https://ui-avatars.com/api/?name={{ $detail->username }}"
-                                                    height="60" class="raounded-circle"></td>
+                                                    height="60" class="rounded-circle"></td>
                                             <td class="align-middle">{{ $detail->username }}</td>
                                             <td class="align-middle">{{ $detail->nationality }}</td>
                                             <td class="align-middle">

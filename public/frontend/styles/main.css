@@ -312,6 +312,33 @@ header .btn-get-started:hover {
   font-weight: bold;
 }
 
+.section-details-content .card-details .user-information th {
+  font-weight: 300;
+  font-size: 18px;
+  color: #071C4D;
+}
+
+.section-details-content .card-details .user-information td {
+  font-weight: 300;
+  font-size: 18px;
+  color: #B1B1B1;
+}
+
+.section-details-content .card-details .user-information .text-blue {
+  color: #071C4D;
+  font-weight: bold;
+}
+
+.section-details-content .card-details .user-information .text-orange {
+  color: #FF9E53;
+  font-weight: bold;
+}
+
+.section-details-content .card-details .user-information .img {
+  width: 50px;
+  height: 50px;
+}
+
 .section-details-content .card-details .payment-instruction {
   font-weight: 300;
   font-size: 14px;

@@ -17,6 +17,18 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/detail/{slug}', 'DetailController@index')->name('detail');
 
+Route::get('/dashboard', 'UserDashboardController@index')
+    ->name('user-dashboard')
+    ->middleware(['auth']);
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('dashboard/edit', 'ProfileController@edit')
+        ->name('edit');
+
+    Route::patch('dashboard/edit', 'ProfileController@update')
+        ->name('update');
+});
+
 Route::post('/checkout/{id}', 'CheckoutController@process')
     ->name('checkout_process')
     ->middleware(['auth','verified']);

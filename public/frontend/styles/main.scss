@@ -340,6 +340,36 @@ header {
             }
         }
 
+        .user-information {
+            th {
+                font-weight: 300;
+                font-size: 18px;
+                color: #071C4D;
+            }
+
+            td {
+                font-weight: 300;
+                font-size: 18px;
+                color: #B1B1B1;
+            }
+
+            .text-blue {
+                color: #071C4D;
+                font-weight: bold;
+            }
+
+            .text-orange {
+                color: #FF9E53;
+                font-weight: bold;
+            }
+
+            .img {
+                width: 50px;
+                height: 50px;
+
+            }
+        }
+
         .payment-instruction {
             font-weight: 300;
             font-size: 14px;

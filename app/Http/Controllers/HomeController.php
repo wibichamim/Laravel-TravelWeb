@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\TravelPackage;
+use App\User;
 
 use Illuminate\Http\Request;
 
