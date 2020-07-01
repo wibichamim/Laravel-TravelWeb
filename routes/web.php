@@ -22,10 +22,10 @@ Route::get('/dashboard', 'UserDashboardController@index')
     ->middleware(['auth']);
 
 Route::group(['middleware' => 'auth'], function () {
-    Route::get('dashboard/edit', 'ProfileController@edit')
+    Route::get('dashboard/edit/{id}', 'ProfileController@edit')
         ->name('edit');
 
-    Route::patch('dashboard/edit', 'ProfileController@update')
+    Route::post('dashboard/edit/{id}', 'ProfileController@update')
         ->name('update');
 });
 

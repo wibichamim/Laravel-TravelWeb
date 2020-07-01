@@ -90,7 +90,7 @@
                     </div>
 
                     <div class="join-container">
-                        <a href="{{ Route('edit') }}" class="btn btn-block btn-join-now mt-3 py-2">
+                        <a href="{{ Route('edit',$id) }}" class="btn btn-block btn-join-now mt-3 py-2">
                             Edit
                         </a>
                     </div>
