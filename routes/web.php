@@ -17,16 +17,20 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/detail/{slug}', 'DetailController@index')->name('detail');
 
-Route::get('/dashboard', 'UserDashboardController@index')
-    ->name('user-dashboard')
-    ->middleware(['auth']);
 
 Route::group(['middleware' => 'auth'], function () {
+    Route::get('/dashboard', 'UserDashboardController@index')
+        ->name('user-dashboard');
+
+    Route::get('/dashboard/detail/{id}', 'UserDashboardController@show')
+        ->name('detail-order');
+
     Route::get('dashboard/edit/{id}', 'ProfileController@edit')
         ->name('edit');
 
     Route::post('dashboard/edit/{id}', 'ProfileController@update')
         ->name('update');
+
 });
 
 Route::post('/checkout/{id}', 'CheckoutController@process')

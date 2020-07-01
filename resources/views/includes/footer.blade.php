@@ -6,7 +6,7 @@
                     <div class="col-12 col-lg-3">
                         <h5>FEATURES</h5>
                         <ul class="list-unstyled">
-                            <li><a href="#">Reviews</a></li>
+                            <li><a href="{{route('user-dashboard')}}">dashboard</a></li>
                             <li><a href="#">Community</a></li>
                             <li><a href="#">Social Media Kit</a></li>
                             <li><a href="#">Affiliate</a></li>

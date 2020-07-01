@@ -43,6 +43,7 @@
                                         <td>Duration</td>
                                         <td>Total Cost</td>
                                         <td>Status</td>
+                                        <td>Action</td>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -53,6 +54,12 @@
                                             <td class="align-middle">{{ $item->travel_package->duration }}</td>
                                             <td class="align-middle">{{ $item->transaction_total }}</td>
                                             <td class="align-middle">{{ $item->transaction_status }}</td>
+                                            <td>
+                                                <a href="{{ route('detail-order', $item->id) }}"
+                                                    class="btn btn-primary">
+                                                    <i class="fa fa-eye"></i>
+                                                </a>
+                                            </td>
                                         </tr>
                                     @empty
                                         <tr>
@@ -90,7 +97,8 @@
                     </div>
 
                     <div class="join-container">
-                        <a href="{{ Route('edit',$id) }}" class="btn btn-block btn-join-now mt-3 py-2">
+                        <a href="{{ Route('edit',$id) }}"
+                            class="btn btn-block btn-join-now mt-3 py-2">
                             Edit
                         </a>
                     </div>

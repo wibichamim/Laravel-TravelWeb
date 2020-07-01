@@ -29,4 +29,15 @@ class UserDashboardController extends Controller
             'details' => $details,
         ]);
     }
+
+    public function show($id)
+    {
+        $item = Transaction::with([
+            'details','travel_package','user'
+        ])->findOrFail($id);
+
+        return view('pages.detailorder',[
+            'item'=> $item
+        ]);
+    }
 }
