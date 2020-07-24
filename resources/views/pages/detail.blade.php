@@ -49,7 +49,7 @@
                         @endif
                         <h2>Tentang Wisata</h2>
                         <p>
-                            {{!! $item->about !!}}
+                            {!! $item->about !!}
                         </p>
 
                         <div class="features row">
